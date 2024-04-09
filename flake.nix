@@ -1,16 +1,21 @@
 {
-  description = "templates to get subprojects started";
+  description = "template for a flake that uses flake-utils";
 
-  outputs = { self }: {
-    templates = {
-      haskell-stack = {
-        path = ./haskell-stack;
-        description = "developer tools for a Haskell project with Stack";
-      };
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs?ref=22.11";
+  };
+
+  outputs = { self, nixpkgs }:
+    let
+      pkgs = nixpkgs.legacyPackages."x86_64-linux";
+    in {
       haskell-cabal = {
         path = ./haskell-cabal;
-        description = "developer tools for a Haskell project with Cabal";
+        description = "Haskell project dependencies and dev tools with Cabal";
+      };
+      haskell-stack = {
+        path = ./haskell-stack;
+        description = "Haskell project dependencies and dev tools with Stack";
       };
     };
-  };
 }
