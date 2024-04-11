@@ -9,7 +9,10 @@
       pkgs = nixpkgs.legacyPackages."x86_64-linux";
       hPkgs = pkgs.haskellPackages;
       myDevTools = [
-          pkgs.haskell-language-server
+          # use the HLS from haskell packages, because the non haskell packages one's
+          # binary name is "haskell-language-server-wrapper", which doesn't match your neovim configurations
+          # "haskell-language-server" command
+          hPkgs.haskell-language-server
           hPkgs.ghc
           hPkgs.cabal-install
           hPkgs.hlint
