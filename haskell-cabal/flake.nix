@@ -1,7 +1,7 @@
 {
   description = "simple flake for Haskell projects with Cabal";
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=22.11";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=23.11";
   };
 
   outputs = { self, nixpkgs }:
