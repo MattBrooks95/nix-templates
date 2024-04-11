@@ -9,7 +9,7 @@
       pkgs = nixpkgs.legacyPackages."x86_64-linux";
       hPkgs = pkgs.haskellPackages;
       myDevTools = [
-        pkgs.haskell-language-server
+          pkgs.haskell-language-server
           hPkgs.ghc
           hPkgs.cabal-install
           hPkgs.hlint
