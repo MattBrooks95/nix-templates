@@ -1,0 +1,63 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1701282334,
+        "narHash": "sha256-MxCVrXY6v4QmfTwIysjjaX0XUhqBbxTWWB4HXtDYsdk=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "057f9aecfb71c4437d2b27d3323df7f93c010b7e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "23.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1701282334,
+        "narHash": "sha256-MxCVrXY6v4QmfTwIysjjaX0XUhqBbxTWWB4HXtDYsdk=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "057f9aecfb71c4437d2b27d3323df7f93c010b7e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "23.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "rescript-lsp": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1716210604,
+        "narHash": "sha256-f8+JZsgo0Ub9Boh23Mlbg2vGAyf3qh64RqlFzchJsnA=",
+        "owner": "MattBrooks95",
+        "repo": "rescript-lsp-flake",
+        "rev": "c79e1a802be73c2fcc9d90a88d66e5d33ad7ef80",
+        "type": "github"
+      },
+      "original": {
+        "owner": "MattBrooks95",
+        "ref": "support-macos",
+        "repo": "rescript-lsp-flake",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "rescript-lsp": "rescript-lsp"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

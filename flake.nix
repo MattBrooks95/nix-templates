@@ -17,5 +17,9 @@
         path = ./haskell-stack;
         description = "Haskell project dependencies and dev tools with Stack";
       };
+      rescript = {
+        path = ./rescript;
+        description = "Rescript flake with node and the rescript LSP";
+      };
     };
 }
