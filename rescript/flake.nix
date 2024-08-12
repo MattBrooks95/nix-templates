@@ -2,9 +2,9 @@
   description = "rescript project flake";
   
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=23.11";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=24.05";
     rescript-lsp = {
-      url = "github:MattBrooks95/rescript-lsp-flake?ref=support-macos";
+      url = "github:MattBrooks95/rescript-lsp-flake";
     };
   };
 
